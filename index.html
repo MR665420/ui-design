@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Red Bug Solutions - Home</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#bf1220",
+            "primary-dark": "#8a0d17",
+            "background-light": "#f8f6f6",
+            "background-dark": "#0f0506",
+            "surface-dark": "#1a0b0c",
+            "surface-light": "#ffffff",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"],
+            "body": ["Noto Sans", "sans-serif"],
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+          backgroundImage: {
+            'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(191, 18, 32, 0.15) 0%, rgba(15, 5, 6, 0) 50%)',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .text-glow {
+      text-shadow: 0 0 20px rgba(191, 18, 32, 0.5);
+    }
+
+    .glass-panel {
+      background: rgba(26, 11, 12, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden transition-colors duration-300">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-panel border-b border-[#472427]/30">
+    <div class="layout-container flex justify-center w-full">
+      <div class="flex items-center justify-between w-full max-w-[1280px] px-6 py-4">
+        <div class="flex items-center gap-3 text-white">
+          <div class="size-8 text-primary">
+            <svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd"
+                d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h2 class="text-white text-xl font-bold leading-tight tracking-tight">Red Bug Solutions</h2>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium"
+            href="servic.html">Services</a>
+          <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium"
+            href="index.html#services">Work</a>
+          <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="index.html#why-us">Why
+            Us</a>
+          <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium" href="Blog.html">Blog</a>
+        </div>
+        <div class="hidden md:flex">
+          <a href="contech.html">
+            <button
+              class="bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold px-6 py-2.5 rounded-lg shadow-[0_0_15px_rgba(191,18,32,0.3)]">
+              Get Started
+            </button>
+          </a>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden text-white cursor-pointer">
+          <span class="material-symbols-outlined">menu</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex flex-col justify-center items-center pt-20 overflow-hidden">
+    <!-- Background Effects -->
+    <div class="absolute inset-0 bg-hero-glow pointer-events-none z-0"></div>
+    <div
+      class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2">
+    </div>
+    <div class="container mx-auto px-6 relative z-10 max-w-[1280px]">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="flex flex-col gap-6 text-left">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span class="text-primary text-xs font-bold uppercase tracking-wider">Now accepting new projects</span>
+          </div>
+          <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+            Building Digital Experiences <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-400">That Perform</span>
+          </h1>
+          <p class="text-gray-400 text-lg md:text-xl font-normal leading-relaxed max-w-xl">
+            Red Bug Solutions transforms complex challenges into elegant software. We engineer scalable, secure, and
+            luxury digital products.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-4">
+            <a href="contech.html">
+              <button
+                class="flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark transition-all duration-300 text-white text-base font-bold px-8 py-4 rounded-lg shadow-[0_4px_20px_rgba(191,18,32,0.4)] hover:shadow-[0_6px_25px_rgba(191,18,32,0.5)] transform hover:-translate-y-0.5">
+                <span>Get a Quote</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </button>
+            </a>
+            <a href="contech.html">
+              <button
+                class="flex items-center justify-center gap-2 bg-transparent border border-white/20 hover:border-primary hover:bg-primary/5 hover:text-primary transition-all duration-300 text-white text-base font-bold px-8 py-4 rounded-lg">
+                <span>Contact Us</span>
+              </button>
+            </a>
+          </div>
+          <div class="flex items-center gap-4 mt-8 pt-8 border-t border-white/10">
+            <div class="flex -space-x-3">
+              <img alt="Professional woman portrait"
+                class="w-10 h-10 rounded-full border-2 border-background-dark object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxoWmC6jpI2Bi618xioyx2UIBHOVPk8LWnhcodtc_lebjKl6HvulJdhN-RuTlJjQkuM5xRTImj0ZM7BRtFozs8xOob3Tx8hjrqHQ14IyvXQete1tJoD-W3PS9D6ulAA40UvFSpr6WWIFEz4b3ldqT_i-x9BTzxpeTQ1kISUbBfWwjXC9TtGoehyYOM7sFKU0_P2UjEfwCIpJPgqrY9DwmI5Mq_Su8YIPMFMJ2gzlCobAiCuAM60F1HYb5UA9TyaS35s7qng695znA" />
+              <img alt="Professional man portrait"
+                class="w-10 h-10 rounded-full border-2 border-background-dark object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTzsF-bb7aGff-cnk40gXm0S9fOekMlnOdxsSToFa_GmCh8Wjqqm_apktAvNqPI26nSy0fJ8XeiMfLQqt78vkYmv_JIAofLyVzg3EuzInAXq0-wl0a72BxnBy7X0pksWywz9twpLEMkUUB9HLMOFXmBuYUGxowq4lbBv8G5ErC6fPHP_pC8DhbhwYuqRbM-2FE11deDO0H821cGEcI-vZ24KtupKQSeRuY_xhDVvzEIj3y2r7wA8a9ovkShHy73LCgqCM73hbsyf0" />
+              <img alt="Portrait of a smiling man"
+                class="w-10 h-10 rounded-full border-2 border-background-dark object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGrB4IgauQxdeNTyAXQ95NfnTwpzfwNkhC-Cs_BHILHkSWOMikmvD5tNnhMkVvX-ZqgbYilIX6TCah0PuClkqqQubkcCa_gV6reRE0lZmTx7B46BJsjDEaGWCZEsHr9qbsg9qcI78Qs10j8U2DEHFwBqSG97ARkjMdF_ZKOecTLS69OttJhfofAtWRZ9anE4D3Plbb8bsVkJtLwp33YAWGx7d0J6O-jS7gMWbjGaw2LSt0qCeLmPZX9Q7NVJ9EiaFxamGn4N5T7ko" />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex text-yellow-500 text-sm">
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+              </div>
+              <span class="text-sm text-gray-400">Trusted by 500+ innovators</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative hidden lg:block h-full min-h-[500px]">
+          <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl rotate-3 transform">
+          </div>
+          <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-surface-dark"
+            data-alt="Abstract 3D digital interface visualization with red accents">
+            <div class="w-full h-full bg-cover bg-center opacity-80"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxAMNcb5MQoVvDgxnL7RLjusADnB7mbgK6HW1NodBgk_GiE6G2DNM4y4xvhvCs8U7xQINcUC54VpZQE5hbIOQu37p5ay8huJPy0v7HOXkIzmD_Rf0V1gLfaCjgGQ43j_Y9Gj5IU2INIAgFusbTOKShqhtR0lQqPAULsYDNYDsuv1wa_YWbMnz1rqpTzu0SQc9QCwE3d4svBKIracK8TbRn2WxBpanUPiDidVClroYI1IPTRDIWM8iArnhG7ubaGgHyuqmUj-VCYf4');">
+            </div>
+            <!-- Floating Card 1 -->
+            <div
+              class="absolute top-10 left-10 p-4 bg-background-dark/90 backdrop-blur-md rounded-xl border border-white/10 shadow-xl flex items-center gap-3 animate-bounce"
+              style="animation-duration: 3s;">
+              <div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">security</span>
+              </div>
+              <div>
+                <div class="text-xs text-gray-400">Security Status</div>
+                <div class="text-sm font-bold text-white">Protected</div>
+              </div>
+            </div>
+            <!-- Floating Card 2 -->
+            <div
+              class="absolute bottom-10 right-10 p-4 bg-background-dark/90 backdrop-blur-md rounded-xl border border-white/10 shadow-xl flex items-center gap-3 animate-bounce"
+              style="animation-duration: 4s;">
+              <div class="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center text-green-500">
+                <span class="material-symbols-outlined">trending_up</span>
+              </div>
+              <div>
+                <div class="text-xs text-gray-400">Uptime</div>
+                <div class="text-sm font-bold text-white">99.99%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Logo Cloud -->
+  <div class="py-10 border-y border-white/5 bg-surface-dark/50">
+    <div class="container mx-auto px-6 max-w-[1280px]">
+      <p class="text-center text-sm text-gray-500 mb-6 font-medium uppercase tracking-widest">Powering Next-Gen
+        Companies</p>
+      <div
+        class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+        <!-- Using text as placeholders for logos but styled to look like SVG logos -->
+        <h3 class="text-xl font-black text-white">ACME<span class="text-primary">.CORP</span></h3>
+        <h3 class="text-xl font-bold italic text-white tracking-tighter">Vortex</h3>
+        <h3 class="text-xl font-semibold text-white tracking-widest">STRATOS</h3>
+        <h3 class="text-xl font-bold text-white flex items-center gap-1"><span
+            class="w-3 h-3 bg-primary rounded-full"></span>NEXUS</h3>
+        <h3 class="text-xl font-light text-white uppercase">Hyper<span class="font-bold">Grid</span></h3>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section -->
+  <section id="services" class="py-24 relative bg-background-dark">
+    <div class="container mx-auto px-6 max-w-[1280px]">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div class="max-w-2xl">
+          <h2 class="text-primary font-bold text-sm tracking-widest uppercase mb-3">Our Expertise</h2>
+          <h3 class="text-3xl md:text-5xl font-bold text-white">Comprehensive digital solutions <br />tailored for <span
+              class="text-primary">growth</span>.</h3>
+        </div>
+        <a class="hidden md:flex items-center gap-2 text-white hover:text-primary transition-colors font-medium border-b border-white/20 pb-1 hover:border-primary"
+          href="servic.html">
+          View all services <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Service Card 1 -->
+        <div
+          class="group p-6 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(191,18,32,0.2)]">
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[28px]">code</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Web Development</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">High-performance web applications built on modern
+            frameworks like React, Vue, and Next.js.</p>
+          <a class="inline-flex items-center text-primary text-sm font-bold group-hover:translate-x-1 transition-transform"
+            href="servic.html">
+            Learn more <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
+          </a>
+        </div>
+        <!-- Service Card 2 -->
+        <div
+          class="group p-6 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(191,18,32,0.2)]">
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[28px]">smartphone</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Mobile Apps</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">Native and cross-platform mobile solutions designed for
+            engagement and retention on iOS and Android.</p>
+          <a class="inline-flex items-center text-primary text-sm font-bold group-hover:translate-x-1 transition-transform"
+            href="#">
+            Learn more <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
+          </a>
+        </div>
+        <!-- Service Card 3 -->
+        <div
+          class="group p-6 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(191,18,32,0.2)]">
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[28px]">palette</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">UI/UX Design</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">User-centric interfaces with a luxury aesthetic. We
+            design experiences that users love to interact with.</p>
+          <a class="inline-flex items-center text-primary text-sm font-bold group-hover:translate-x-1 transition-transform"
+            href="#">
+            Learn more <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
+          </a>
+        </div>
+        <!-- Service Card 4 -->
+        <div
+          class="group p-6 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(191,18,32,0.2)]">
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[28px]">cloud</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-3">Cloud Strategy</h4>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">Scalable and secure cloud infrastructure architectures.
+            AWS, Azure, and Google Cloud experts.</p>
+          <a class="inline-flex items-center text-primary text-sm font-bold group-hover:translate-x-1 transition-transform"
+            href="#">
+            Learn more <span class="material-symbols-outlined text-sm ml-1">chevron_right</span>
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 text-center md:hidden">
+        <a class="btn-primary inline-flex items-center gap-2 text-white bg-surface-dark border border-white/20 px-4 py-2 rounded-lg"
+          href="servic.html">
+          View all services <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us -->
+  <section id="why-us" class="py-24 bg-[#140809] relative overflow-hidden">
+    <!-- Decoration -->
+    <div class="absolute -right-40 top-20 w-96 h-96 bg-primary/5 rounded-full blur-[120px]"></div>
+    <div class="container mx-auto px-6 max-w-[1280px] relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-2 lg:order-1 relative">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4 translate-y-8">
+              <div class="bg-surface-dark p-2 rounded-2xl border border-white/5">
+                <img alt="Data analytics dashboard visualization"
+                  class="w-full aspect-[4/5] object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWSEIqM6nx7FYbxfboocSmUThu05z0DYf0c5Pyj_Kur5V6CO4Ras1sD-I7RDsHXZGSGoyJCLh_VxP1PMF0xyb5jdG28bCW82-zAawYoMZ5Yu3dGQiY__kcPWEcR2tCuRlHhr6WnhZpaifbtLYqsQN2d1dtQg2g8eydlUNWw-cLn2EmM77fTApGOs6qlHS7mAU1xdeBEG-R25NKZmO-nFTo8WnPBuCbt2Jzf9_ouJsjCDkv_kaNyTgPYyYhjoXlumB5yoE16zC-TBQ" />
+              </div>
+              <div
+                class="bg-primary/10 p-6 rounded-2xl border border-primary/20 flex flex-col justify-center items-center text-center">
+                <h3 class="text-4xl font-bold text-primary mb-1">98%</h3>
+                <p class="text-xs text-white uppercase tracking-wider">Client Retention</p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="bg-surface-dark p-6 rounded-2xl border border-white/5 flex flex-col justify-center items-center text-center">
+                <h3 class="text-4xl font-bold text-white mb-1">5+</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-wider">Years Experience</p>
+              </div>
+              <div class="bg-surface-dark p-2 rounded-2xl border border-white/5">
+                <img alt="Team collaborating on tech project"
+                  class="w-full aspect-[4/5] object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9pFDBQbTpcPFkzeZF9sv2j3R-eyfAIBgcCPNTGEQUsGOzJrReQTYa_BfChSoU5_sSDYwKokGvXN_FUW2cS6b7_W5MJBNdqEf72xJo18Wx0sCixmtbxkga4rzw2BwUR5d-hBRFf4sIa7EGTUgenfkjqehqhezpGohB9aRhzMj-cY8BpMXy3Qnj80vDuOacT3dxR5gG-JJeMIMAZSTc1m1kd50C46_rUARTO6zPbLgbIvcUuvy8GX76l2-dBEiWKFoapOPkUuOGsE4" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Why Choose <span class="text-primary">Red
+              Bug</span>?</h2>
+          <p class="text-gray-400 mb-10 text-lg">We don't just write code; we architect solutions that drive tangible
+            business results. Our approach combines technical excellence with strategic thinking.</p>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-dark border border-white/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">rocket_launch</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">99% Uptime Guarantee</h3>
+                <p class="text-gray-400 text-sm">We ensure your digital products are always available with robust
+                  infrastructure and redundant systems.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-dark border border-white/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">lock</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Enterprise Security</h3>
+                <p class="text-gray-400 text-sm">Ironclad security protocols including end-to-end encryption to protect
+                  your sensitive data.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-dark border border-white/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">monitoring</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Scalable Architecture</h3>
+                <p class="text-gray-400 text-sm">Systems built to grow alongside your business, from MVP to
+                  enterprise-scale deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section class="py-24 bg-background-dark">
+    <div class="container mx-auto px-6 max-w-[1280px]">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Client Success Stories</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Don't just take our word for it. Hear what our partners have to say
+          about working with Red Bug Solutions.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-surface-dark p-8 rounded-2xl border border-white/5 relative">
+          <span class="material-symbols-outlined absolute top-6 right-6 text-4xl text-white/10">format_quote</span>
+          <div class="flex items-center gap-4 mb-6">
+            <img alt="Avatar of John Smith" class="w-12 h-12 rounded-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBABkRCbNyiTfDGqwAbraAM6kqcVJBO4rV0wps5A6lYdCpRtofX-klaaQOmcaDsp44QS6UCc65P7i2If2AdAUCsHBud6W7F-vGWgbQQLJYGtXqpI4sg_dRKwMTU6IGZ0mItN-g7nurPsefIW8IyKj-KA1DhONVEKyAkBLUjLMX4G0WV4q9WykQr-ew9bgbUDvaYdOGnI9SZosSNr1743Xim_6MvXOXpuYGWPTfKFOSLFRZwlKLgfuSE910DuO6WEEC4uQdcF5ijmY8" />
+            <div>
+              <h4 class="text-white font-bold">John Smith</h4>
+              <p class="text-primary text-xs font-medium uppercase">CTO, FinTech Global</p>
+            </div>
+          </div>
+          <p class="text-gray-300 italic leading-relaxed">"Red Bug Solutions transformed our legacy system into a
+            state-of-the-art platform. Their attention to detail and security focus was exactly what we needed."</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div
+          class="bg-surface-dark p-8 rounded-2xl border border-primary/30 relative shadow-[0_0_30px_rgba(191,18,32,0.1)]">
+          <span class="material-symbols-outlined absolute top-6 right-6 text-4xl text-primary/20">format_quote</span>
+          <div class="flex items-center gap-4 mb-6">
+            <img alt="Avatar of Sarah Johnson" class="w-12 h-12 rounded-full object-cover border-2 border-primary"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPcEuzRroMNuRhEiPvFypY73u34-lnWzRELav5-qfltDp74fVjbOywJ2aJwrf6pQoZAi8vycBKNMaUD-urfmknJPTWAvzbG8dEc7gVIVhPMsu3ECXWVrDxsFk06hMiEfaeuSzHLUYdx5hbJN80rmR-Maufmhgzbad6T_2000x9e_PJk8rgITaw33Wf01UEeFh-6PFLqvUPlei7mj-F2pYfWsiVuvZI37K1YMvo_zphx9itVGS7KBm1rUMNNtW6e19eMBJ4C5slIEo" />
+            <div>
+              <h4 class="text-white font-bold">Sarah Johnson</h4>
+              <p class="text-primary text-xs font-medium uppercase">CEO, RetailNext</p>
+            </div>
+          </div>
+          <p class="text-gray-300 italic leading-relaxed">"The UI/UX design they delivered was nothing short of
+            spectacular. Our user engagement increased by 40% within the first month of launch."</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-surface-dark p-8 rounded-2xl border border-white/5 relative">
+          <span class="material-symbols-outlined absolute top-6 right-6 text-4xl text-white/10">format_quote</span>
+          <div class="flex items-center gap-4 mb-6">
+            <img alt="Avatar of Michael Chen" class="w-12 h-12 rounded-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF_W0uXi5cOhRTWTg_jkvuUN_U5byZCfQUwQKDIU9i1arDgo9G23xe_xebi55pjU1gFM_46i2OaISvZS0_dXq2_LfcVJI8lbI_h8DiaEYQnxhOg1wCTw5A58jViAWdut7rJpEWBB-diPpSI6XdQoD9U3vKrF3Z2ZGj7nGviMXVKrbaAIGsBCUZcmb0KhluTrnA_shQwC9iPaZ9mOqWsgUKyJ4h7YTNBpjdy9uz3guvZftZyI9hm9p3bMVKh-thLwvP_gdznR3dI3A" />
+            <div>
+              <h4 class="text-white font-bold">Michael Chen</h4>
+              <p class="text-primary text-xs font-medium uppercase">Founder, HealthStart</p>
+            </div>
+          </div>
+          <p class="text-gray-300 italic leading-relaxed">"Scalability was our biggest concern. The team at Red Bug
+            architected a cloud solution that handles our millions of daily requests flawlessly."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Latest Insights -->
+  <section class="py-24 bg-[#140809]">
+    <div class="container mx-auto px-6 max-w-[1280px]">
+      <div class="flex justify-between items-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Latest Insights</h2>
+        <a class="text-primary font-bold text-sm hover:text-white transition-colors" href="Blog.html">View Blog</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Blog Post 1 -->
+        <article class="group cursor-pointer">
+          <div class="overflow-hidden rounded-xl mb-4 bg-surface-dark aspect-video border border-white/5">
+            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              data-alt="Abstract code on a computer screen in dark mode"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAH2Nox6ogyEkJitySR4wSeNHHJnkJDuCbTeMsM3Xo5hKkMnryj2ykLg_pwuiv8NGDprcM1FtxURGD-NYvqRWzeep2yYPH2YLNxVbGJp-frQRixRNS2NORXpuDpjzHoZd2LpAOdgytvy705E_yWZybefmOZg598X9KXEAEdLMxbwS4UWIq2dU6yFHdRraQHFEj4zBTNpnv9OOWnl-ADpKLdrQCteyMBu6TaohEbxVJiujelGSH0go924TcaJmV_fWhVfs7duLgnA_A');">
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-xs font-bold text-primary uppercase tracking-wider">Development</span>
+            <span class="text-xs text-gray-500">• 5 min read</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">The Future of
+            Serverless Architecture</h3>
+          <p class="text-gray-400 text-sm line-clamp-2">Explore how serverless computing is redefining how we build and
+            deploy scalable applications efficiently.</p>
+        </article>
+        <!-- Blog Post 2 -->
+        <article class="group cursor-pointer">
+          <div class="overflow-hidden rounded-xl mb-4 bg-surface-dark aspect-video border border-white/5">
+            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              data-alt="Close up of a mobile phone showing colorful UI design"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7TIwb0Y8JicOEhpqfQl-btQSPiyDPXwSg09TrFvSw4n0ry8uRByhhcGrT8ycvmvOTPxuoH1-0MQy5UO4a5liMuhAX6K8M-iu21f1xYYm8IMQlbE6Yx400vQCqVV0Nq0A7ARATW7rx2MdDa840fQ41gIFi_qVRM3fTeoUVYk-MdaCgPc-fMl2a72BKizwRGf3mz0aZPTXFLawRQ4ZJukghUYbcYaS_aeITJ0nWrHewcnXSpSVPNqsFqUlKxVRhJnyx8e0qsy2ZKG0');">
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-xs font-bold text-primary uppercase tracking-wider">Design</span>
+            <span class="text-xs text-gray-500">• 3 min read</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Dark Mode Design
+            Patterns</h3>
+          <p class="text-gray-400 text-sm line-clamp-2">Best practices for implementing dark mode in your applications
+            to reduce eye strain and save battery.</p>
+        </article>
+        <!-- Blog Post 3 -->
+        <article class="group cursor-pointer">
+          <div class="overflow-hidden rounded-xl mb-4 bg-surface-dark aspect-video border border-white/5">
+            <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              data-alt="Network cables connected to a server switch with lights"
+              style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB562VyqdLp0FYZTbFfERG3IkWxmiYCjO7im7LFi9b6mSMx7_IUuev-Mu4Wr9FAS9Gk9JcasrvgOYKO36eKXGg9SEbeO9NruVe6q-S_Lb5hSsAtJtZMSCxLCHkiwuoHfI4GTsX2BkiYxuy1GXe6ovxuh337LE_cMxXfxhA308yADZ8STnt_ET7sTonabtGHmbrJp-tjdLOVdf98fNQdPEYZMhZ2TCZVTABKBLajbhJUJtzatZhjjHpcu-8CHb68PVRp_OQKrZn09GQ');">
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-xs font-bold text-primary uppercase tracking-wider">Technology</span>
+            <span class="text-xs text-gray-500">• 7 min read</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">AI in Modern Web Apps
+          </h3>
+          <p class="text-gray-400 text-sm line-clamp-2">Integrating artificial intelligence features into web
+            applications to enhance user experience and automation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-surface-dark border-t border-white/5 pt-16 pb-8">
+    <div class="container mx-auto px-6 max-w-[1280px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <!-- Brand -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-3 text-white">
+            <div class="size-6 text-primary">
+              <svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                  d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z"
+                  fill="currentColor" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-xl font-bold">Red Bug Solutions</h2>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">Engineering premium digital experiences for forward-thinking
+            brands.</p>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-white transition-all"
+              href="#">
+              <!-- Facebook placeholder icon -->
+              <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                </path>
+              </svg>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-white transition-all"
+              href="#">
+              <!-- Twitter placeholder icon -->
+              <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                </path>
+              </svg>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary hover:text-white transition-all"
+              href="#">
+              <!-- LinkedIn placeholder icon -->
+              <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Links -->
+        <div>
+          <h3 class="text-white font-bold text-lg mb-6">Company</h3>
+          <ul class="space-y-4 text-sm text-gray-400">
+            <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+            <li><a class="hover:text-primary transition-colors" href="about.html#team">Our Team</a></li>
+            <li><a class="hover:text-primary transition-colors" href="about.html#careers">Careers</a></li>
+            <li><a class="hover:text-primary transition-colors" href="contech.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Links -->
+        <div>
+          <h3 class="text-white font-bold text-lg mb-6">Services</h3>
+          <ul class="space-y-4 text-sm text-gray-400">
+            <li><a class="hover:text-primary transition-colors" href="servic.html#web-dev">Web Development</a></li>
+            <li><a class="hover:text-primary transition-colors" href="servic.html#mobile-apps">Mobile Applications</a>
+            </li>
+            <li><a class="hover:text-primary transition-colors" href="servic.html#ui-ux">UI/UX Design</a></li>
+            <li><a class="hover:text-primary transition-colors" href="servic.html#cloud">Cloud Strategy</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <h3 class="text-white font-bold text-lg mb-6">Subscribe</h3>
+          <p class="text-gray-400 text-sm mb-4">Join our newsletter to stay up to date on features and releases.</p>
+          <div class="flex flex-col gap-3">
+            <input
+              class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+              placeholder="Enter your email" type="email" />
+            <button
+              class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 rounded-lg text-sm transition-colors">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <p>© 2024 Red Bug Solutions. All rights reserved.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+          <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+          <a class="hover:text-white transition-colors" href="#">Cookies Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

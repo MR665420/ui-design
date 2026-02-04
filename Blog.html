@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Red Bug Solutions - Blog</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#bf1220",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211112",
+                        "surface-dark": "#2c1a1b",
+                        "border-dark": "#472427"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display overflow-x-hidden antialiased selection:bg-primary selection:text-white">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- Header -->
+        <header
+            class="sticky top-0 z-50 w-full border-b border-solid border-border-dark bg-background-dark/80 backdrop-blur-md">
+            <div class="layout-container flex h-full grow flex-col">
+                <div class="px-4 md:px-10 py-3 flex items-center justify-between whitespace-nowrap">
+                    <div class="flex items-center gap-4 text-white">
+                        <div class="size-8 text-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-3xl">bug_report</span>
+                        </div>
+                        <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Red Bug Solutions
+                        </h2>
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+                        <nav class="flex items-center gap-9">
+                            <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                                href="index.html">Home</a>
+                            <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                                href="servic.html">Services</a>
+                            <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                                href="about.html">About</a>
+                            <a class="text-white text-sm font-bold leading-normal border-b-2 border-primary"
+                                href="Blog.html">Blog</a>
+                            <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors"
+                                href="contech.html">Contact</a>
+                        </nav>
+                        <a href="contech.html">
+                            <button
+                                class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-red-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                                <span class="truncate">Get a Quote</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="md:hidden text-white cursor-pointer">
+                        <span class="material-symbols-outlined">menu</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="relative px-4 md:px-40 py-10 flex flex-1 justify-center">
+                <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                    <div class="@container">
+                        <div class="flex flex-col gap-6 py-10 @[864px]:flex-row items-center">
+                            <div class="w-full @[864px]:w-1/2 relative group overflow-hidden rounded-xl">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover transition-transform duration-700 group-hover:scale-105"
+                                    data-alt="Abstract red and black digital network visualization representing AI and data flow"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIr6LhXYLdVw5xrm3JxfpIXVl9uwBhGM8TDkOij8CDbmGQjzvxRLxHGGwPQvez5TzXKUqPT-1wJlOtVYhxGsEJvfi4vpXeUem1ubAMJhkr6Xg7Fpv60APHyuHBJVlnw6S3waQ7S1IY9SSpOUTigGOARnbDqF9PdLZIEiGzU4jJ9x6RYFf3jY5jcWc50EJ0sGGDNs6E990d5_HA_P77vJfbJNp38EWshHlrbj16uKFPH4NiqgH8iTl2PrGPJaALkhlWwn9auj7hKPU");'>
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            </div>
+                            <div class="flex flex-col gap-6 @[864px]:w-1/2 @[864px]:pl-10 justify-center">
+                                <div class="flex flex-col gap-4 text-left">
+                                    <div class="flex items-center gap-2">
+                                        <span
+                                            class="px-2 py-1 rounded bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider border border-primary/30">Featured</span>
+                                        <span class="text-gray-400 text-xs font-medium">Oct 12, 2023 • 5 min read</span>
+                                    </div>
+                                    <h1
+                                        class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                                        Insights &amp; Innovation
+                                    </h1>
+                                    <h2 class="text-gray-300 text-base md:text-lg font-normal leading-relaxed">
+                                        Exploring the future of digital services and the intersection of luxury and
+                                        technology. Discover how AI is reshaping customer experiences.
+                                    </h2>
+                                </div>
+                                <button
+                                    class="flex w-fit cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-red-700 transition-all text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(191,18,32,0.3)] hover:shadow-[0_0_30px_rgba(191,18,32,0.5)]">
+                                    <span class="truncate mr-2">Read Featured Article</span>
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Search & Filter Bar -->
+            <section class="px-4 md:px-40 py-5 flex justify-center sticky top-[65px] z-40">
+                <div class="layout-content-container flex flex-col w-full max-w-[1200px]">
+                    <div
+                        class="bg-surface-dark/90 backdrop-blur border border-border-dark rounded-xl p-4 shadow-lg flex flex-col md:flex-row gap-4 justify-between items-center">
+                        <!-- Chips -->
+                        <div
+                            class="flex gap-2 overflow-x-auto w-full md:w-auto no-scrollbar pb-2 md:pb-0 mask-image-gradient">
+                            <button
+                                class="flex h-9 shrink-0 items-center justify-center px-4 rounded-lg bg-primary text-white text-sm font-medium transition-transform hover:scale-105">
+                                All
+                            </button>
+                            <button
+                                class="flex h-9 shrink-0 items-center justify-center px-4 rounded-lg bg-border-dark hover:bg-[#5a2e32] text-gray-200 hover:text-white text-sm font-medium transition-colors">
+                                Development
+                            </button>
+                            <button
+                                class="flex h-9 shrink-0 items-center justify-center px-4 rounded-lg bg-border-dark hover:bg-[#5a2e32] text-gray-200 hover:text-white text-sm font-medium transition-colors">
+                                UX/UI Design
+                            </button>
+                            <button
+                                class="flex h-9 shrink-0 items-center justify-center px-4 rounded-lg bg-border-dark hover:bg-[#5a2e32] text-gray-200 hover:text-white text-sm font-medium transition-colors">
+                                Cybersecurity
+                            </button>
+                            <button
+                                class="flex h-9 shrink-0 items-center justify-center px-4 rounded-lg bg-border-dark hover:bg-[#5a2e32] text-gray-200 hover:text-white text-sm font-medium transition-colors">
+                                Cloud
+                            </button>
+                        </div>
+                        <!-- Search -->
+                        <div class="relative w-full md:w-[300px]">
+                            <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+                                <span class="material-symbols-outlined text-[20px]">search</span>
+                            </span>
+                            <input
+                                class="w-full bg-[#1a0d0e] border border-border-dark rounded-lg py-2 pl-10 pr-4 text-white placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm h-10"
+                                placeholder="Search articles..." />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Latest Articles Grid -->
+            <section class="px-4 md:px-40 py-10 flex justify-center">
+                <div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+                    <div class="flex items-center justify-between mb-8 px-2">
+                        <h2 class="text-white text-2xl md:text-3xl font-bold leading-tight tracking-[-0.015em]">Latest
+                            Articles</h2>
+                        <a class="text-primary hover:text-white text-sm font-bold flex items-center gap-1 transition-colors"
+                            href="#">
+                            View Archive <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                        <!-- Article Card 1 -->
+                        <article
+                            class="group flex flex-col bg-surface-dark rounded-xl overflow-hidden border border-border-dark hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
+                            <div class="relative h-48 overflow-hidden">
+                                <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    data-alt="Futuristic glowing red circuit board pattern background"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDILVigW_weZzTT9nmXIA4gAYTDlzujni9a9ixc1lrYG2Lbp-tAla1_Oy5-MYzgdB4T-qsYG8Se1QNXPujq_etx7Nm7UuWDMTs-DqontAj8ME3OFOk3Z5bE5SbIGlCBEpmtc9SAat7Tq7VqJMjOutvo-1SDUjx3NZ2lJv6TtyjVP3IriVJw5Wntg7E73CgL74mAxhIkfdBiRDdHHz6wBuDMw3R2Vy8AkPDUp8c-owD--0Gt1sxm-tntH-wKsp_nzk4Tw0W8GeUjs3Q');">
+                                </div>
+                                <div class="absolute top-3 left-3">
+                                    <span
+                                        class="px-2 py-1 rounded bg-black/70 backdrop-blur text-white text-xs font-bold uppercase">Cybersecurity</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col flex-1 p-6">
+                                <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                                    <span class="material-symbols-outlined text-[14px]">calendar_today</span> Oct 10,
+                                    2023
+                                    <span class="w-1 h-1 rounded-full bg-gray-600"></span>
+                                    <span>8 min read</span>
+                                </div>
+                                <h3
+                                    class="text-white text-xl font-bold leading-snug mb-3 group-hover:text-primary transition-colors">
+                                    Zero Trust Architecture: A Necessary Shift
+                                </h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                                    Why traditional perimeter-based security models are failing and how Zero Trust
+                                    provides a robust framework for the modern enterprise.
+                                </p>
+                                <div class="mt-auto pt-4 border-t border-border-dark flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-gray-700 overflow-hidden"
+                                            data-alt="Author portrait">
+                                            <img class="w-full h-full object-cover"
+                                                data-alt="Portrait of John Doe, Security Expert"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzssISX0Lvm8iykep_NkKMjMEk91U-CigJe9ILkeDnqP_xlY1VDXiFklVpbFctNhMJg2BGOS5TWwbKlEvDmaEHjLGD9R3lAom9bXfrwtfUakE4XIINqp0z8nnwo9UlKwF_8kmNBZKNsoQgNItMjc7KIpmSqTXshMmzw3KKMY_nXKxtS60O4SDzkaV4wxgkbX36MubcKVBh-CHxU9bg9bLiubNQ1LpV6Ugx7HzTY_4HAUoNtWUFnPpI9-JJcVZOFKW6Ayt6d861_xM" />
+                                        </div>
+                                        <span class="text-xs text-gray-300">Alex Chen</span>
+                                    </div>
+                                    <span
+                                        class="text-primary text-sm font-bold group-hover:translate-x-1 transition-transform">Read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Article Card 2 -->
+                        <article
+                            class="group flex flex-col bg-surface-dark rounded-xl overflow-hidden border border-border-dark hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
+                            <div class="relative h-48 overflow-hidden">
+                                <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    data-alt="Minimalist abstract white and grey geometric shapes"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgVp2Ti6QsUNR5rS-LWuSF-Jq6F-0CHl3nF_kvDcd_mUcOpZRYxBCoVPfeDRPPN3dupt6Z6yoxV25owP2le4HpT8vSBRpaVQzdXoMPQ5RZaEaGe3WcqSIkRtbVGT_ak55FDBGHUoZaGr2dtKzkKUIrJVjfIsH3HSLvckk0OrNlpOs4Pr6q3PbTzgSzg4qb9tFmCUxV3uDdcL0QlnWiMed0HtoWW0zTSrdk-0CFjFTgORlQbx_7RfTHPUDQddhN-a8QXS8geSddM8k');">
+                                </div>
+                                <div class="absolute top-3 left-3">
+                                    <span
+                                        class="px-2 py-1 rounded bg-black/70 backdrop-blur text-white text-xs font-bold uppercase">Cloud</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col flex-1 p-6">
+                                <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                                    <span class="material-symbols-outlined text-[14px]">calendar_today</span> Oct 08,
+                                    2023
+                                    <span class="w-1 h-1 rounded-full bg-gray-600"></span>
+                                    <span>6 min read</span>
+                                </div>
+                                <h3
+                                    class="text-white text-xl font-bold leading-snug mb-3 group-hover:text-primary transition-colors">
+                                    Scalability Patterns for High-Traffic Apps
+                                </h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                                    Exploring horizontal vs vertical scaling strategies and how to prepare your
+                                    infrastructure for unexpected traffic spikes.
+                                </p>
+                                <div class="mt-auto pt-4 border-t border-border-dark flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-gray-700 overflow-hidden"
+                                            data-alt="Author portrait">
+                                            <img class="w-full h-full object-cover"
+                                                data-alt="Portrait of Sarah Smith, Cloud Architect"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwd7ZMiNBc2aarYTlwpgAQhjDtA9xtxfAnQVnF7MKMlVKa5ZMh_3RY8cnwKB0t3sWWdR05zqrLJPYIJThuhz8ThaVPF_rfy4WvLWjjdCH_zXf7sKuQDWQlAu6tmMKBKRPJnypf2qRSv0mvCjIBb1UNZwmXhen9AoJSyPB3dd22YxNYsITtledOXP79VNRpUt3sr7VIEKpR2ra4YiaOrm5VYIs0VQ3_UIu_fXCUzhoCzT7c5bD1TZwQanOiX4i-88we84aFyh8oOys" />
+                                        </div>
+                                        <span class="text-xs text-gray-300">Sarah Smith</span>
+                                    </div>
+                                    <span
+                                        class="text-primary text-sm font-bold group-hover:translate-x-1 transition-transform">Read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Article Card 3 -->
+                        <article
+                            class="group flex flex-col bg-surface-dark rounded-xl overflow-hidden border border-border-dark hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
+                            <div class="relative h-48 overflow-hidden">
+                                <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                    data-alt="UI design interface wireframes on a dark desk"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvcAGqBfF9MLH4PIbrdPg53Al2o5ddAcVqaDWETmbAOSva2DoSmo1s3WZkrypDJr0PlvKR7CYjZk5RX_FPJJNNVQljrIbnLSy3_YlC-cSRmC1hFA4aOan2p1PsQxLiCuxnbawpmopkkfojLuHgQF0snxai0u_6xTTJtTqxJU601Vgi40PNw7yAtmDXb_B1oxCHPupbNNtc41_uxsgVFFWypivY6L8vDoncFgZ6f739L4c_GtFdB_ooxDHTByDKQgq73poi7FMf0y4');">
+                                </div>
+                                <div class="absolute top-3 left-3">
+                                    <span
+                                        class="px-2 py-1 rounded bg-black/70 backdrop-blur text-white text-xs font-bold uppercase">UX/UI
+                                        Design</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col flex-1 p-6">
+                                <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                                    <span class="material-symbols-outlined text-[14px]">calendar_today</span> Oct 05,
+                                    2023
+                                    <span class="w-1 h-1 rounded-full bg-gray-600"></span>
+                                    <span>4 min read</span>
+                                </div>
+                                <h3
+                                    class="text-white text-xl font-bold leading-snug mb-3 group-hover:text-primary transition-colors">
+                                    The Psychology of Dark Mode
+                                </h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                                    Dark mode isn't just an aesthetic choice. It affects battery life, readability, and
+                                    user perception of luxury.
+                                </p>
+                                <div class="mt-auto pt-4 border-t border-border-dark flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-6 h-6 rounded-full bg-gray-700 overflow-hidden"
+                                            data-alt="Author portrait">
+                                            <img class="w-full h-full object-cover"
+                                                data-alt="Portrait of Mike Ross, Designer"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAapVoSaevosD8gY9KnRFDlDHrPxaLZdxCMRmCu1s01UrXMbIzmzVEaMz7CW6R4xC5mbaasEsf-rIlLiJYq6SvzZHgZfA4wGDAt-ifMwpM4DqN3TS7iWiPrBAStQnX29XPzg04n2xSQOFF9cUbPP-ujTjsn7VPtiaPAIdU1HNy_8cGctAH_8Kp3yLNRBKtDHicMDnwP4aCYowJPc-bzMfqkxdqC886H-JOIO2pWX4nQ---z6aCboJbuMnE_r_wlHBL9NRU0RZAGgcw" />
+                                        </div>
+                                        <span class="text-xs text-gray-300">Mike Ross</span>
+                                    </div>
+                                    <span
+                                        class="text-primary text-sm font-bold group-hover:translate-x-1 transition-transform">Read</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="flex justify-center mt-12 mb-8">
+                        <button
+                            class="bg-surface-dark border border-border-dark hover:border-primary text-white px-8 py-3 rounded-lg text-sm font-bold transition-all hover:bg-background-dark shadow-lg">
+                            Load More Articles
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Newsletter Section -->
+            <section class="border-t border-border-dark bg-surface-dark py-16 px-4 md:px-40">
+                <div class="layout-content-container max-w-[960px] mx-auto flex flex-col items-center text-center">
+                    <div class="p-4 rounded-full bg-primary/10 mb-6">
+                        <span class="material-symbols-outlined text-primary text-4xl">mail</span>
+                    </div>
+                    <h2 class="text-white text-3xl font-bold mb-4">Stay in the Loop</h2>
+                    <p class="text-gray-400 max-w-lg mb-8">
+                        Get the latest insights on digital transformation, design trends, and tech innovation delivered
+                        directly to your inbox.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 w-full max-w-[500px]">
+                        <input
+                            class="flex-1 bg-background-dark border border-border-dark rounded-lg px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                            placeholder="Enter your email address" type="email" />
+                        <button
+                            class="bg-primary hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-[0_0_15px_rgba(191,18,32,0.4)]">
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="text-gray-500 text-xs mt-4">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="border-t border-border-dark bg-background-dark pt-12 pb-8 px-4 md:px-40">
+            <div class="layout-content-container max-w-[1200px] mx-auto flex flex-col">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2 text-white">
+                            <span class="material-symbols-outlined text-primary">bug_report</span>
+                            <span class="font-bold text-lg">Red Bug Solutions</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Crafting premium digital experiences for the modern world. We blend luxury aesthetics with
+                            cutting-edge technology.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-bold">Company</h4>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="about.html">About
+                            Us</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="#">Careers</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors"
+                            href="contech.html">Contact</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="#">Partners</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-bold">Services</h4>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="servic.html">Web
+                            Development</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="servic.html">Mobile
+                            Apps</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="servic.html">UI/UX
+                            Design</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="servic.html">Cloud
+                            Solutions</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-bold">Legal</h4>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="#">Privacy
+                            Policy</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="#">Terms of
+                            Service</a>
+                        <a class="text-gray-400 hover:text-primary text-sm transition-colors" href="#">Cookie Policy</a>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-500 text-sm">© 2023 Red Bug Solutions. All rights reserved.</p>
+                    <div class="flex gap-4">
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Red Bug Solutions - Services</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Noto+Sans:wght@300..700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#bf1220",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211112",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- Top Navigation -->
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-[#472427] bg-[#221112]/95 backdrop-blur-md px-10 py-3">
+            <div class="flex items-center gap-4 text-white">
+                <div class="size-8 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-3xl">bug_report</span>
+                </div>
+                <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Red Bug Solutions</h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8 hidden md:flex">
+                <div class="flex items-center gap-9">
+                    <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                        href="index.html">Home</a>
+                    <a class="text-white text-sm font-medium leading-normal" href="servic.html">Services</a>
+                    <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                        href="Blog.html">Blog</a>
+                    <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                        href="about.html">About</a>
+                    <a class="text-white/80 hover:text-primary transition-colors text-sm font-medium leading-normal"
+                        href="contech.html">Contact</a>
+                </div>
+                <a href="contech.html">
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-red-700 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                        <span class="truncate">Get Started</span>
+                    </button>
+                </a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </header>
+        <!-- Main Content Wrapper -->
+        <main class="flex-1 flex flex-col items-center w-full">
+            <div class="w-full max-w-[1200px] px-4 md:px-10 flex flex-col gap-10 py-10">
+                <!-- Hero Section -->
+                <div class="@container">
+                    <div class="flex flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 md:p-16 min-h-[400px] relative overflow-hidden group"
+                        data-alt="abstract dark red technological data streams background"
+                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3Dz3MmZ6ousc2jwQiJ2HEmqZxoHWPWUzy5LFSNLUMzaj184_VkKzzQxcJ9WHzOauayyCSzA31VAVHmTTkoNhVfrNsWTyftCJtH0HmVRjR3zpLHPnsrPBt_5Zxsw4VERGlWZNjQgT8lByJZQVi-tk4jpZGCZE1VelJOLo9Yv08QR4CdCt3z3TQeu14RU4W7ZglYWfjlP8dkhM68WlSveeT5XpaHIobnXe5WmzGbC3h4PqYdYgT3RWGt4rj70xxRdzXqQVWQbwQyPQ");'>
+                        <!-- Decorative glow -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90">
+                        </div>
+                        <div class="relative flex flex-col gap-4 text-center max-w-[720px] z-10">
+                            <h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+                                Digital Excellence Engineered for Growth
+                            </h1>
+                            <p class="text-gray-300 text-base md::text-lg font-normal leading-relaxed">
+                                We combine luxury aesthetics with robust engineering to deliver premium digital services
+                                that elevate your brand above the noise.
+                            </p>
+                        </div>
+                        <div class="relative z-10 mt-4 flex gap-4">
+                            <a href="servic.html">
+                                <button
+                                    class="flex h-12 px-6 items-center justify-center rounded-lg bg-primary text-white text-base font-bold hover:bg-red-700 transition-all shadow-[0_0_15px_rgba(191,18,32,0.5)]">
+                                    View Services
+                                </button>
+                            </a>
+                            <a href="Blog.html">
+                                <button
+                                    class="flex h-12 px-6 items-center justify-center rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 text-white text-base font-bold hover:bg-white/20 transition-all">
+                                    Our Portfolio
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Header -->
+                <div class="flex flex-col gap-2 pt-5">
+                    <h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em]">Our Expertise</h2>
+                    <div class="h-1 w-20 bg-primary rounded-full"></div>
+                    <p class="text-gray-400 max-w-2xl mt-2">Explore our suite of comprehensive digital solutions
+                        tailored for modern businesses.</p>
+                </div>
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1: Web Design -->
+                    <div
+                        class="group relative flex flex-col gap-4 p-6 rounded-xl bg-[#2a1617] border border-[#472427] hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(191,18,32,0.15)] hover:-translate-y-1">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[100px] text-primary">web</span>
+                        </div>
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                            <span class="material-symbols-outlined text-2xl">palette</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3 class="text-white text-xl font-bold">Web Design</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Crafting immersive visual experiences that captivate and convert. We focus on luxury
+                                aesthetics and intuitive navigation.
+                            </p>
+                        </div>
+                        <a class="mt-auto pt-4 text-primary text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Card 2: Figma UI/UX -->
+                    <div
+                        class="group relative flex flex-col gap-4 p-6 rounded-xl bg-[#2a1617] border border-[#472427] hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(191,18,32,0.15)] hover:-translate-y-1">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[100px] text-primary">layers</span>
+                        </div>
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                            <span class="material-symbols-outlined text-2xl">design_services</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3 class="text-white text-xl font-bold">Figma UI/UX</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Prototyping user-centric interfaces with precision. We build high-fidelity wireframes
+                                that set the foundation for success.
+                            </p>
+                        </div>
+                        <a class="mt-auto pt-4 text-primary text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Card 3: SEO Optimization -->
+                    <div
+                        class="group relative flex flex-col gap-4 p-6 rounded-xl bg-[#2a1617] border border-[#472427] hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(191,18,32,0.15)] hover:-translate-y-1">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[100px] text-primary">trending_up</span>
+                        </div>
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                            <span class="material-symbols-outlined text-2xl">search</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3 class="text-white text-xl font-bold">SEO Optimization</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Driving organic visibility through technical audits, keyword strategy, and content
+                                optimization to rank you #1.
+                            </p>
+                        </div>
+                        <a class="mt-auto pt-4 text-primary text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Card 4: Frontend Development -->
+                    <div
+                        class="group relative flex flex-col gap-4 p-6 rounded-xl bg-[#2a1617] border border-[#472427] hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(191,18,32,0.15)] hover:-translate-y-1">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[100px] text-primary">code</span>
+                        </div>
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                            <span class="material-symbols-outlined text-2xl">html</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3 class="text-white text-xl font-bold">Frontend Dev</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Pixel-perfect, responsive code using modern frameworks like React and Tailwind to bring
+                                designs to life.
+                            </p>
+                        </div>
+                        <a class="mt-auto pt-4 text-primary text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Card 5: Backend Development -->
+                    <div
+                        class="group relative flex flex-col gap-4 p-6 rounded-xl bg-[#2a1617] border border-[#472427] hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(191,18,32,0.15)] hover:-translate-y-1">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[100px] text-primary">storage</span>
+                        </div>
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                            <span class="material-symbols-outlined text-2xl">dns</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3 class="text-white text-xl font-bold">Backend Dev</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Robust, scalable server-side solutions and API integrations ensuring your application
+                                runs smoothly under load.
+                            </p>
+                        </div>
+                        <a class="mt-auto pt-4 text-primary text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Card 6: AdSense Management -->
+                    <div
+                        class="group relative flex flex-col gap-4 p-6 rounded-xl bg-[#2a1617] border border-[#472427] hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(191,18,32,0.15)] hover:-translate-y-1">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-[100px] text-primary">attach_money</span>
+                        </div>
+                        <div
+                            class="size-12 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
+                            <span class="material-symbols-outlined text-2xl">monetization_on</span>
+                        </div>
+                        <div class="flex flex-col gap-2 z-10">
+                            <h3 class="text-white text-xl font-bold">AdSense Mgmt</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">
+                                Maximizing your revenue streams through intelligent placement strategies and performance
+                                analytics.
+                            </p>
+                        </div>
+                        <a class="mt-auto pt-4 text-primary text-sm font-bold flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- CTA Banner -->
+                <div
+                    class="relative mt-12 w-full overflow-hidden rounded-xl bg-gradient-to-r from-[#2a1617] to-background-dark border border-[#472427] p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-8 z-10 relative">
+                        <div class="flex flex-col gap-3 text-center md:text-left">
+                            <h2 class="text-white text-2xl md:text-3xl font-bold">Ready to elevate your digital
+                                presence?</h2>
+                            <p class="text-gray-400 text-sm md:text-base">Let's discuss how our tech-focused solutions
+                                can grow your business.</p>
+                        </div>
+                        <a href="contech.html">
+                            <button
+                                class="flex min-w-[160px] h-12 cursor-pointer items-center justify-center rounded-lg bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors shadow-lg shadow-primary/20">
+                                Contact Us
+                            </button>
+                        </a>
+                    </div>
+                    <!-- Decorative Background Element -->
+                    <div class="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-primary/10 blur-[60px]"></div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="border-t border-[#472427] bg-[#1a0d0e] py-12 px-10">
+            <div class="mx-auto flex max-w-[960px] flex-col gap-8 md:flex-row md:justify-between">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-2 text-white">
+                        <span class="material-symbols-outlined text-primary">bug_report</span>
+                        <span class="text-lg font-bold">Red Bug Solutions</span>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-[300px]">Premium digital services tailored for the
+                        modern web.
+                    </p>
+                </div>
+                <div class="flex gap-12">
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-white font-bold text-sm">Company</h4>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="about.html">About</a>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="#">Careers</a>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="contech.html">Contact</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-white font-bold text-sm">Services</h4>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="servic.html">Web Design</a>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="servic.html">Development</a>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="#">Marketing</a>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-white font-bold text-sm">Social</h4>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="#">LinkedIn</a>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="#">Twitter</a>
+                        <a class="text-gray-400 hover:text-primary text-sm" href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mx-auto mt-12 max-w-[960px] border-t border-[#472427] pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-xs">© 2024 Red Bug Solutions. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a class="text-gray-500 hover:text-primary text-xs" href="#">Privacy Policy</a>
+                    <a class="text-gray-500 hover:text-primary text-xs" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
